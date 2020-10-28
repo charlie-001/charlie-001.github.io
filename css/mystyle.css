@@ -307,3 +307,8 @@ body {
     100% { height: 0%;}
   }
   body { background-image:url("bg-gif.gif"); background-repeat:repeat; }
+  /* table 
+{
+    table-layout:fixed;
+    width:100%;
+} */
