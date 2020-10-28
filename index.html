@@ -10,6 +10,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+    function fun(){ 
+        document.getElementById('name').value=''; 
+        document.getElementById('mail').value=''; 
+        document.getElementById('phone').value=''; 
+        } 
+</script> 
 
 
 </head>
@@ -42,7 +49,7 @@
                             <a class="nav-link" href="#Skill">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#WorkExperience">Work Experience</a>
+                            <a class="nav-link" href="#WorkEx">Work Experience</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#Contact">Contact</a>
@@ -75,8 +82,10 @@
                                     <div class="media-body">
                                         <h3 class="display-4 ml-5">I'm Aditya Sehgal</h3>
                                         <p class="text-muted ml-5">Full Stack Developer</p>
-                                        <div class="container">
-                                            <table class="table table-responsive ml-4">
+
+                                     
+                                        <!-- <div class="container">
+                                            <table class="table table-responsive ml-8">
                                                 <tr>
                                                     <td class="text-muted">Age</td>
                                                     <td>:</td>
@@ -98,6 +107,36 @@
                                                 </tr>
                                                 </tr>
                                             </table>
+                                        </div> -->
+
+                                        <div class="container">
+                                            
+                                            
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Age</td>
+                                                            <td>:</td>
+                                                            <td>18 Years Old</td>
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Email</td>
+                                                            <td>:</td>
+                                                            <td>adityasehgal93@gmail.com  </td>
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Phone</td>
+                                                            <td>:</td>
+                                                            <td>8700432018</td>
+                                                            
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -128,7 +167,8 @@
                     <span class="bg-danger text-white">About Me</span>
                     <hr class="bg-danger">
                     <div data-aos="fade-left" data-aos-once="true">
-                        <p class="lead text-justify s"  style="color: beige;"  id="Skill">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at
+                        <p class="lead text-justify s" style="color: beige;" id="Skill">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Donec at
                             facilisis ex. Vivamus condimentum mi a massa venenatis, malesuada maximus lacus lobortis.
                             Maecenas auctor eros sit amet mi luctus lacinia. Vivamus a velit ac purus faucibus malesuada
                             vulputate ac augue. Donec sodales, ipsum ac ornare semper, sapien lacus tempor justo, quis
@@ -175,7 +215,7 @@
 
                             <h3 class="ml-3 my-3">Ruby</h3>
                             <div class="progress mx-3">
-                                <div class="progress-bar bg-dark" style="width: 70%" >70%</div>
+                                <div class="progress-bar bg-dark" style="width: 70%" id="WorkEx">70%</div>
                             </div>
 
 
@@ -192,66 +232,69 @@
     <div class="resume">
         <div data-aos="fade-left" data-aos-once="true" data-aos-duration="1500">
             <div class="resume_right">
-                
-                    <div class="resume_item resume_work"  >
-                        <div class="title">
-                            <p class="bold"">Work Experience</p>
+
+                <div class="resume_item resume_work">
+                    <div class="title">
+                        <p class="bold"">Work Experience</p>
                         </div>
                         <ul>
                             <li>
-                                <div class="date">2013 - 2015</div>
-                                <div class="info">
-                                    <p class="semi-bold">Microsoft (Junior Developer)</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="date">2015 - 2017</div>
-                                <div class="info">
-                                    <p class="semi-bold">Google (Senior Developer)</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="date">2017 - Present</div>
-                                <div class="info">
-                                    <p class="semi-bold">Amazon (Head Developer)</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
+                                <div class=" date">2013 - 2015
                     </div>
-                </div>
-                <div class="resume_item resume_education">
-                    <div class="title">
-                        <p class="bold"  style="color: beige;">Education</p>
+                    <div class="info">
+                        <p class="semi-bold">Microsoft (Junior Developer)</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!
+                        </p>
                     </div>
-                    <ul>
-                        <div data-aos="fade-left" data-aos-once="true" data-aos-duration="1500">
-                            <li  style="color: orangered;">
-                                <div class="date"  style="color: beige;">2010 - 2013</div>
-                                <div class="info">
-                                    <p class="semi-bold"  style="color: beige;">Web Designing (Thapar University)</p>
-                                    <p  style="color: beige;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!
-                                    </p>
-                                </div>
-                            </li>
-                            <li style="color: orangered;">
-                                <div class="date"  style="color: beige;">2000 - 2010</div>
-                                <div class="info">
-                                    <p class="semi-bold "  style="color: beige;">Amity International School</p>
-                                    <p  style="color: beige;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!
-                                    </p>
-                                </div>
-                            </li>
+                    </li>
+                    <li>
+                        <div class="date">2015 - 2017</div>
+                        <div class="info">
+                            <p class="semi-bold">Google (Senior Developer)</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">2017 - Present</div>
+                        <div class="info">
+                            <p class="semi-bold">Amazon (Head Developer)</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!
+                            </p>
+                        </div>
+                    </li>
                     </ul>
                 </div>
-
             </div>
+            <div class="resume_item resume_education">
+                <div class="title">
+                    <p class="bold" style="color: beige;">Education</p>
+                </div>
+                <ul>
+                    <div data-aos="fade-left" data-aos-once="true" data-aos-duration="1500">
+                        <li style="color: orangered;">
+                            <div class="date" style="color: beige;">2010 - 2013</div>
+                            <div class="info">
+                                <p class="semi-bold" style="color: beige;">Web Designing (Thapar University)</p>
+                                <p style="color: beige;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nostrum, voluptatibus!
+                                </p>
+                            </div>
+                        </li>
+                        <li style="color: orangered;">
+                            <div class="date" style="color: beige;">2000 - 2010</div>
+                            <div class="info">
+                                <p class="semi-bold " style="color: beige;">Amity International School</p>
+                                <p style="color: beige;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nostrum, voluptatibus!
+                                </p>
+                            </div>
+                        </li>
+                </ul>
+            </div>
+
         </div>
+    </div>
     </div>
     <!-- contact -->
     <div id="Contact">
@@ -264,14 +307,14 @@
                         <div class="card-header">
                             <h4 class="my-4">Fill the Form and I'll get back to you shortly!</h4>
                             <div class="form-group">
-                                <input type="text" placeholder="Your Name" class="form-control">
+                                <input type="text" placeholder="Your Name" class="form-control" id="name">
 
                             </div>
                             <div class="form-group">
-                                <input type="text" placeholder="Email" class="form-control">
+                                <input type="text" placeholder="Email" class="form-control" id="email">
 
                             </div>
-                            <div class="form-group">
+                            <div class="form-group" id="phone">
                                 <textarea class="form-control" placeholder="Write your message""></textarea>
                                 
                             </div>
